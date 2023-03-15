@@ -186,3 +186,10 @@ document.querySelector("#submit").addEventListener("click", () => {
   }, 1500);
   window.scrollTo(0, 0);
 });
+
+
+
+// Dynamic Blog Button 
+document.getElementById('blog-btn').addEventListener('click', function(e){
+    window.location.href = './Blogs/blogs.html';
+})
