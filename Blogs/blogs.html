@@ -7,6 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #000000;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f3c3fe;
+        }
+    </style>
 </head>
 
 <body class="mx-20 my-12">
@@ -72,7 +90,7 @@
             </div>
         </div>
 
-        <div class="bg-purple-500 px-12 py-8 rounded-lg mt-8">
+        <div class="bg-indigo-400 px-12 py-8 rounded-lg mt-8">
             <h2 class="text-2xl font-bold">2. Difference between Local Storage, Session Storage, and Cookies:</h2>
             <div class="ml-12">
                 <p> JavaScript provides three mechanisms for storing data on the client - cookies, session storage, and
@@ -98,32 +116,28 @@
                         not sensitive, such as user preferences.</p>
                 </article>
                 <article class="mb-4">
-                    <h2 class="text-xl font-medium mb-2">Cookies</h2>
-                    <table class="table-auto">
-                        <thead>
-                            <tr>
-                                <th>Song</th>
-                                <th>Artist</th>
-                                <th>Year</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>The Sliding Mr. Bones (Next Stop, Pottersville)</td>
-                                <td>Malcolm Lockyer</td>
-                                <td>1961</td>
-                            </tr>
-                            <tr>
-                                <td>Witchy Woman</td>
-                                <td>The Eagles</td>
-                                <td>1972</td>
-                            </tr>
-                            <tr>
-                                <td>Shining Star</td>
-                                <td>Earth, Wind, and Fire</td>
-                                <td>1975</td>
-                            </tr>
-                        </tbody>
+                    <h2 class="text-xl font-medium mb-2 text-center">Local Storage vs Session Storage vs Cookies</h2>
+                    <table>
+                        <tr>
+                            <th>Local Storage</th>
+                            <th>Session Storage</th>
+                            <th>Cookies</th>
+                        </tr>
+                        <tr>
+                            <td>It allows 10MB of data to be stored.</td>
+                            <td>It allows 5MB of data to be stored.</td>
+                            <td>The storage capacity is limited to 4KB of data.</td>
+                        </tr>
+                        <tr>
+                            <td>The stored data is not deleted when the browser is closed.</td>
+                            <td>The data is stored only for the session and will be deleted when the browser is closed.</td>
+                            <td>The data can be set to expire at a certain time.</td>
+                        </tr>
+                        <tr>
+                            <td>The data is not sent with the request from the client to the server.</td>
+                            <td>The data is not sent with the request from the client to the server</td>
+                            <td>The data is sent with the request from the client to the server</td>
+                        </tr>
                     </table>
                 </article>
 
