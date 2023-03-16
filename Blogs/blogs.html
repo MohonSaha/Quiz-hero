@@ -22,24 +22,24 @@
         }
 
         tr:nth-child(even) {
-            background-color: #f3c3fe;
+            background-color: #f2f7da;
         }
     </style>
 </head>
 
-<body class="mx-20 my-12">
+<body class="md:mx-20 md:my-12 mx-4 my-5">
     <section>
-        <h1 class="text-center text-4xl font-semibold">Wellcome to blog page</h1>
-        <button class="bg-blue-600 font-light text-sm px-5 py-1 rounded text-white"><a class=""
+        <h1 class="text-center md:text-4xl text-3xl font-semibold">Wellcome to blog page</h1>
+        <button class="bg-green-600 font-medium mt-8 text-sm px-5 py-1 rounded text-white"><a class=""
                 href="../index.html">Back</a></button>
     </section>
 
 
     <!-- Blog section  -->
-    <section class="mt-16">
-        <div class="bg-purple-500 px-12 py-8 rounded-lg">
+    <section class="mt-8">
+        <div class="bg-green-400 md:px-12 px-6 py-8 rounded-lg">
             <h2 class="text-2xl font-bold">1. Difference among map, forEach, filter and find :</h2>
-            <div class="ml-12">
+            <div class="md:ml-12 ml-3">
                 <p>All of these methods are called array iteration methods. These are operate on every array item.</p>
                 <article class="my-4">
                     <h2 class="text-xl font-medium  mb-2">map()</h2>
@@ -56,7 +56,7 @@
                 </article>
                 <article class="mb-4">
                     <h2 class="text-xl font-medium text-center mb-2">map() vs forEach()</h2>
-                    <ul class="list-disc ml-16">
+                    <ul class="list-disc md:ml-16 ml-6">
                         <li>The map() method returns a new array, whereas the forEach() method does not return a new
                             array.</li>
                         <li>The map() method is used to transform the elements of an array, whereas the forEach() method
@@ -79,7 +79,7 @@
                 </article>
                 <article class="mb-4">
                     <h2 class="text-xl font-medium text-center mb-2">map() vs forEach()</h2>
-                    <ul class="list-disc ml-16">
+                    <ul class="list-disc md:ml-16 ml-6">
                         <li>The find() method return the first element, whereas the filter() return a new array with all
                             elements that pass a testing function.</li>
                         <li>If no values satisfy the testing function- find() return undefined whereas filter() return
@@ -90,9 +90,9 @@
             </div>
         </div>
 
-        <div class="bg-indigo-400 px-12 py-8 rounded-lg mt-8">
+        <div class="bg-indigo-400 md:px-12 px-6 py-8 rounded-lg mt-8">
             <h2 class="text-2xl font-bold">2. Difference between Local Storage, Session Storage, and Cookies:</h2>
-            <div class="ml-12">
+            <div class="md:ml-12 ml-3">
                 <p> JavaScript provides three mechanisms for storing data on the client - cookies, session storage, and
                     local storage.</p>
                 <article class="my-4">
@@ -144,9 +144,9 @@
             </div>
         </div>
 
-        <div class="bg-orange-300 px-12 py-8 rounded-lg mt-8">
+        <div class="bg-green-400 md:px-12 px-6 py-8 rounded-lg mt-8">
             <h2 class="text-2xl font-bold">3. What is event loop and how it's work? </h2>
-            <div class="ml-12">
+            <div class="md:ml-12 ml-3">
                 <article class="my-4">
                     <h2 class="text-xl font-medium  mb-2">Event loop :</h2>
                     <p>In JavaScript, the event loop is a fundamental part of the language runtime that manages the asynchronous execution of code. It's responsible for handling the processing of events and the scheduling of tasks in an efficient manner. The event loop works by continuously checking the queue of tasks that need to be executed, prioritizing the ones that are most urgent or have been waiting the longest. It executes each task one at a time, and if a task takes too long to complete, it may pause execution and move on to the next task in the queue.</p>
@@ -159,16 +159,16 @@
             </div>
         </div>
 
-        <div class="bg-pink-300 px-12 py-8 rounded-lg mt-8">
+        <div class="bg-indigo-400 md:px-12 px-6 py-8 rounded-lg mt-8">
             <h2 class="text-2xl font-bold">4. Explain the given function :   quizTimer, chooseQuiz  </h2>
-            <div class="ml-12">
+            <div class="md:ml-12 ml-3">
                 <article class="my-4">
                     <h2 class="text-xl font-medium  mb-2">quizTimer() :</h2>
                     <p>This function is used to create a timer for count the time has passed to submit all the quizes. Besides this function gives alert to charge the color after 60 seconds have passed.</p>
                 </article>
                 <article class="mb-4">
                     <h2 class="text-xl font-medium mb-2">chooseQuiz() :</h2>
-                    <p>The Event Loop has one simple job - to monitor the Call Stack and the Callback Queue. If the Call Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack, which effectively runs it.</p>
+                    <p>This function is used to set the answer of the given questions. This function takes two parameters one is the index number of the answered question and another is the value of the selected option. The function is checking that whether this question was answered before or not. If the question was answered before, then replace the option with current one. Else just push the question and given answer in the array through spread operator.</p>
                 </article>
 
             </div>
